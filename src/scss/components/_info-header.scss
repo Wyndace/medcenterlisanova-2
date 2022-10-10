@@ -1,11 +1,41 @@
 .info-header {
 
     // .info-header__list
-    &__list {}
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 10px;
+    }
 
     // .info-header__item
-    &__item {}
+    &__item {
+        font-family: cl(font-family);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    // .info-header__icon
+    &__icon {
+        padding: 15px;
+        background-color: cl(color-mercury);
+        border-radius: 100%;
+
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
 
     // .info-header__link
-    &__link {}
+    &__link {
+        font-weight: 800;
+        padding-bottom: 3px;
+
+        &._underline {
+            background-image: linear-gradient(#{cl(color-dark)}, #{cl(color-dark)});
+        }
+    }
 }

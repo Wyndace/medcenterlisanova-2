@@ -20,7 +20,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     transition: min-height 0.3s ease 0s;
     gap: 33px;
@@ -28,6 +28,10 @@
 
   &__body &__container {
     gap: fluid-value(33, 80);
+  }
+
+  &__action {
+    align-self: center;
   }
 
   // .header__block
@@ -56,10 +60,18 @@
   }
 
   // .header__info
-  &__info {}
+  &__info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+  }
 
 
   // .header__sub
-  &__sub {}
-
+  &__sub {
+    padding: 35px 25px;
+    width: 100%;
+    background-color: cl(color-white);
+  }
 }
