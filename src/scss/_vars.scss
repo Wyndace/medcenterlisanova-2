@@ -9,19 +9,32 @@
   --color-blue: #{hex-to-rgb(#26a4ec)};
   --color-sand: #{hex-to-rgb(#fbe0cd)};
   --color-error: #{hex-to-rgb(#ef1e45)};
+  --color-coral: #{hex-to-rgb(#f1743c)};
+  --color-coral-dark: #{hex-to-rgb(#d9632f)};
+  --color-polo-blue: #{hex-to-rgb(#89a9d1)};
+  --color-polo-blue-dark: #{hex-to-rgb(#5275a0)};
+  --color-mercury: #{hex-to-rgb(#e5e5e5)};
+  --color-darken-white: #{hex-to-rgb(#efefef)};
+
 
   // Indents
   --section-offset: 60px;
 
   // Borders
-  --border-radius: 4px;
+  --border-radius: 8px;
 
   // Fonts
-  --font-family: #{$font-family}, sans-serif;
+  --font-family: #{$font-family},
+  sans-serif;
+  --font-family-title: #{$font-family-title},
+  sans-serif;
 
   // Typefaces
-  --font-base: 400 #{fluid-value(16px, 18px, $xxs, $template-size)} / 140% #{cl(font-family)};
-  --font-bold: 700 #{fluid-value(22, 24)} / 140% #{cl(font-family)};
+  --font-base: 400 14px / 16px #{cl(font-family)};
+  --font-base-title: 700 #{fluid-value(20, 24)} / 28px #{cl(font-family)};
+  --big-bold-title-font: 700 #{fluid-value(24, 36)} / 140% #{cl(font-family-title)};
+  --medium-bold-title-font: 700 #{fluid-value(18, 24)} / 36px #{cl(font-family-title)};
+  --mini-medium-font: 500 fluid-value(14, 18) / 16px #{cl(font-family)};
 }
 
 // ====================================================================================================================================================================
