@@ -1,0 +1,77 @@
+.submenu {
+  position: relative;
+  width: 100%;
+
+  &:hover .nav__link>._underline {
+    background-size: 100% 1px;
+  }
+
+  .nav__link {
+    width: 100%;
+
+    &::after {
+      position: absolute;
+      right: 0;
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 100%;
+      background-image: url("../img/icons/arrow.svg");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      transition: transform 0.5s ease;
+    }
+  }
+
+  // .submenu__list
+  &__list {
+    position: absolute;
+    top: 0;
+    left: 75%;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 0;
+    padding-left: 15px;
+    padding-right: 40px;
+    background-color: cl(color-white);
+    transform: translateX(50%);
+    transition: all 0.5s ease;
+    box-shadow: 0 0 30px cl(color-black, 0.1);
+    gap: 30px;
+  }
+
+  // .submenu__item
+  &__item {
+    width: max-content;
+  }
+
+  // .submenu__link
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    width: max-content;
+    color: cl(color-dark);
+    font-family: cl(font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 1px;
+      background-color: cl(color-polo-blue);
+    }
+  }
+
+  &__link ._underline {
+    background-image: linear-gradient(#{cl(color-dark)}, #{cl(color-dark)});
+  }
+
+  &__link:hover ._underline {
+    background-size: 100% 1px;
+  }
+}

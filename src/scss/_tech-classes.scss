@@ -2,6 +2,12 @@
   text-decoration: none;
   color: inherit;
   -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+}
+
+._paragraph_reset {
+  margin: 0;
+  padding: 0;
 }
 
 ._fieldset-reset {
@@ -15,12 +21,8 @@
 
 ._list-reset {
   list-style: none;
-  margin: 10px;
+  margin: 0;
   padding: 0;
-}
-
-._error {
-  border: 2px #ff4019 solid !important; // stylelint-disable-line declaration-no-important
 }
 
 ._btn-reset {
@@ -33,7 +35,7 @@
   -webkit-touch-callout: none;
 }
 
-._hidden {
+._no-visible {
   position: absolute !important; // stylelint-disable-line declaration-no-important
   left: 0 !important; // stylelint-disable-line declaration-no-important
   top: 0 !important; // stylelint-disable-line declaration-no-important
@@ -45,6 +47,12 @@
   opacity: 0 !important; // stylelint-disable-line declaration-no-important
   pointer-events: none !important; // stylelint-disable-line declaration-no-important
   clip: rect(1px, 1px, 1px, 1px) !important; // stylelint-disable-line declaration-no-important
+}
+
+._hidden {
+  overflow: hidden; // stylelint-disable-line declaration-no-important
+  opacity: 0 !important; // stylelint-disable-line declaration-no-important
+  pointer-events: none !important; // stylelint-disable-line declaration-no-important
 }
 
 ._container {
@@ -89,23 +97,17 @@
 }
 
 ._underline {
-  position: relative;
+  display: inline;
+  /* should be 'inline' for multiple line animation */
+  padding-bottom: 1px;
+  background-image: linear-gradient(#{cl(color-white)}, #{cl(color-white)});
+  background-position: 50% calc(100% - 0px);
+  background-size: 0 1px;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s;
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -4px;
-    display: block;
-    width: 0;
-    height: 1px;
-    background: cl(color-sand);
-    transition: width 0.5s ease 0s, right 0.5s ease 0s;
-  }
-
-  &:hover::after,
-  &._active::after {
-    width: 100%;
+  &:hover,
+  &._active {
+    background-size: 100% 1px;
   }
 }
