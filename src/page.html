@@ -9,11 +9,21 @@
   <div class="site-container">
     @include('./html/sections/header.html')
     <main class="page">
-      <!-- Here we connect the sections -->
+      @include('./html/sections/hero.html')
+      @include('./html/sections/addiction.html')
+      <!-- @include('./html/sections/alcohol.html')
+      @include('./html/sections/help.html')
+      @include('./html/sections/banner.html', {'img': '', 'title' : ''})
+      @include('./html/sections/worker.html')
+      @include('./html/sections/whywe.html')
+      @include('./html/sections/banner.html', {'img': '', 'title' : ''})
+      @include('./html/sections/aboutus.html')
+      @include('./html/sections/form.html')
+      @include('./html/sections/seemore.html') -->
     </main>
     @include('./html/sections/footer.html')
   </div>
-<!--  @include('./html/components/modal windows/modal-hello.html', {'where': 'тайного тайника', 'where-link': 'https://t.me/Wyndace', 'where-name': 'Мастера по вёрстки'})-->
+  <!--  @include('./html/components/modal windows/modal-hello.html', {'where': 'тайного тайника', 'where-link': 'https://t.me/Wyndace', 'where-name': 'Мастера по вёрстки'})-->
   @include('./html/mixins/_scripts.html', {'script': 'main'})
 </body>
 

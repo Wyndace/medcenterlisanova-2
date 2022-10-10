@@ -1,0 +1,36 @@
+.page {}
+
+.services {
+
+    // .services__container
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    // .services__title
+    &__title {}
+
+    // .services__info
+    &__info {
+        width: 540px;
+        background-color: cl(color-white);
+    }
+
+    // .services__img-block
+    &__img-block {
+        padding: 25px;
+    }
+
+    // .services__texts
+    &__texts {
+        font-family: cl(font-family);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: cl(color-gray);
+        border: 1px solid cl(color-darken-white);
+        padding: 30px 25px;
+    }
+}

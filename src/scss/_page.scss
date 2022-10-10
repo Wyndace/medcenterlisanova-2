@@ -1,2 +1,12 @@
 .page {
+
+    // .page__hero
+    &__hero {
+        margin-bottom: 60px;
+    }
+
+    // .page__services
+    &__services {
+        margin-bottom: 80px;
+    }
 }

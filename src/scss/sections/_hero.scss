@@ -1,0 +1,52 @@
+.hero {
+    width: 100vw;
+    padding-left: 350px;
+
+    // .hero__container
+    &__container {
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 100%;
+        max-width: 100vw;
+        height: 400px;
+        background-image: url('../img/backs/hospital.jpg');
+        background-size: cover;
+        background-position: left 60%;
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+            background-color: cl(color-white, 0.5);
+        }
+    }
+
+    &__body {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding-left: 85px;
+        z-index: 2;
+    }
+
+    // .hero__title
+    &__title {
+        display: flex;
+        flex-direction: column;
+        font-family: cl(font-family-title);
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 80%;
+
+        &_small {
+            font-size: 32px;
+        }
+    }
+}

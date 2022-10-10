@@ -14,7 +14,7 @@ html {
 
 body {
   margin: 0;
-  font-family: var(--font-family);
+  font-family: cl(font-family);
   background-color: $background;
 }
 
@@ -96,12 +96,12 @@ a {
     margin-right: 17px;
     width: 48px;
     height: 48px;
-    font: var(--medium-bold-title-font);
+    font: cl(medium-bold-title-font);
     font-size: 28px;
     line-height: 150%;
     text-align: center;
-    color: var(--color-white);
-    background-color: var(--color-polo-blue);
+    color: cl(color-white);
+    background-color: cl(color-polo-blue);
 
     &::after {
       content: "";
@@ -112,7 +112,7 @@ a {
       display: inline-block;
       width: 87%;
       height: 100%;
-      background-color: var(--color-polo-blue-dark);
+      background-color: cl(color-polo-blue-dark);
       transform: translate(-50%, 0);
       transition: opacity 0.1s ease-in-out;
     }
@@ -122,9 +122,9 @@ a {
   &__text {
     display: inline-block;
     margin: 0;
-    font: var(--medium-bold-title-font);
+    font: cl(medium-bold-title-font);
     text-transform: uppercase;
-    color: var(--color-dark);
+    color: cl(color-dark);
   }
 }
 
