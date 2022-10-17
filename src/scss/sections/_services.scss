@@ -1,36 +1,96 @@
-.page {}
-
 .services {
 
-    // .services__container
-    &__container {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+  // .services__container
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  // .service__body
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 410px;
+    gap: 30px;
+  }
+
+  // .services__title
+  &__title {
+  }
+
+  // .services__info
+  &__info {
+    grid-column: 6 span;
+    background-color: cl(color-white);
+  }
+
+  // .services__img-block
+  &__img-block {
+    padding: 25px;
+  }
+
+  // .services__texts
+  &__texts {
+    font-family: cl(font-family), serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: cl(color-gray);
+    border-top: 1px solid cl(color-darken-white);
+    padding: 30px 25px;
+  }
+
+  // .services__service
+  &__service {
+    position: relative;
+    padding: 45px 40px;
+    grid-column: 6 span;
+    background-color: cl(color-polo-blue);
+  }
+
+  // .services__subtitle
+  &__subtitle {
+    font: cl(font-base-title);
+    color: cl(color-white);
+    margin-bottom: 35px;
+  }
+
+  // .services__list
+  &__list {
+  }
+
+  // .services__item
+  &__item {
+    display: flex;
+    align-items: center;
+    font: cl(mini-medium-font);
+    color: cl(color-white);
+    &:not(:last-of-type) {
+      margin-bottom: 45px;
     }
 
-    // .services__title
-    &__title {}
-
-    // .services__info
-    &__info {
-        width: 540px;
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 1px;
+        margin-right: 9px;
         background-color: cl(color-white);
     }
+  }
 
-    // .services__img-block
-    &__img-block {
-        padding: 25px;
+  // .services__back
+  &__back {
+    position: absolute;
+    bottom: 30px;
+    right: 25px;
+    svg {
+      width: 115px;
+      height: 115px;
+      color: cl(color-white, 0.3);
+      use {
+      }
     }
-
-    // .services__texts
-    &__texts {
-        font-family: cl(font-family);
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 26px;
-        color: cl(color-gray);
-        border: 1px solid cl(color-darken-white);
-        padding: 30px 25px;
-    }
+  }
 }

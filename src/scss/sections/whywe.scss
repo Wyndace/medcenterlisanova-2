@@ -1,0 +1,23 @@
+.whywe {
+  // .whywe__container
+  &__container {
+  }
+
+  // .whywe__title
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  // .whywe__list
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 315px;
+    gap: 30px;
+  }
+
+  // .whywe__item
+  &__item {
+    grid-column: 3 span;
+  }
+}

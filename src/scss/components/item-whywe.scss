@@ -1,0 +1,38 @@
+.item-whywe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 15px;
+  background-color: cl(color-white);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+
+  // .item-whywe__img
+  &__img {
+    margin-bottom: 15px;
+  }
+
+  // .item-whywe__title
+  &__title {
+    font: cl(mini-medium-font);
+    color: cl(color-dark);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.whywe__item {
+  &:nth-of-type(odd) {
+    .item-whywe {
+      background-color: cl(color-polo-blue);
+
+      &__title {
+        color: cl(color-white);
+      }
+
+      &__btn:hover {
+        color: cl(color-white);
+      }
+    }
+  }
+}

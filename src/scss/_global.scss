@@ -47,12 +47,6 @@ a {
   background-color: cl(color-coral);
   transition: background-color 0.2s ease-in-out, border 1s ease-in-out, color 0.2s ease-in-out;
 
-  &:hover {
-    border: 1px solid currentColor;
-    color: cl(color-coral);
-    background: cl(color-white);
-  }
-
   &_primary {
     position: relative;
     padding: 20px 30px;
@@ -81,8 +75,20 @@ a {
     padding: 7px 51px;
     font: cl(mini-medium-font);
 
+    &:hover {
+      border: 1px solid currentColor;
+      color: cl(color-coral);
+      background: cl(color-white);
+    }
+
     &_secondary {
       padding: 7px 30px;
+
+      &:hover {
+        border: 1px solid currentColor;
+        color: cl(color-coral);
+        background: transparent;
+      }
     }
   }
 }
