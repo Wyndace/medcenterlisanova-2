@@ -1,3 +1,19 @@
-# WynWebKit - Wyndace's Web Development Kit
+# medcenterlisanova-2
 
-Enjoy this ;)
+Лендинг для медицинского центра Лисанова — портфолио-проект 2022 года.
+
+## Структура сайта
+
+- Hero — главный экран с оффером
+- Addiction / Alcohol — секции по направлениям лечения
+- Banner — акционный блок
+- Help — блок помощи
+- WhyWe — преимущества
+- Слайдер, табы, модальные окна (hello, iframe)
+- Форма заявки
+
+## Стек
+
+- Gulp + SCSS
+- Vanilla JS (слайдер, табы, модалки, формы)
+- Custom Select, Survey Slide
